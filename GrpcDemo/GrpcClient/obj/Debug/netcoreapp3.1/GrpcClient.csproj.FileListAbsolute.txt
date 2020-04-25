@@ -16,3 +16,4 @@ D:\grpcWebService\grpcServerClient\GrpcDemo\GrpcClient\obj\Debug\netcoreapp3.1\G
 D:\grpcWebService\grpcServerClient\GrpcDemo\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.dll
 D:\grpcWebService\grpcServerClient\GrpcDemo\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.pdb
 D:\grpcWebService\grpcServerClient\GrpcDemo\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.genruntimeconfig.cache
+D:\grpcWebService\grpcServerClient\GrpcDemo\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.csprojAssemblyReference.cache
