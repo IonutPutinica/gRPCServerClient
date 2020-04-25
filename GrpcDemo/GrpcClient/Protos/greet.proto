@@ -1,0 +1,23 @@
+//the proto files are a way of defining a contract between the server and a client in gRPC
+syntax = "proto3";
+
+//this defines the namespace for this particular proto
+option csharp_namespace = "GrpcServer";
+
+package greet;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message HelloReply {
+  string message = 1;
+}
