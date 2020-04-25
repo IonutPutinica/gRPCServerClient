@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "DQMRAV9VHEvxNAwdpMy7amtX44AHdPvsYDgTZc0xlMcG5ocnLWfQxp5JJG6hsF1oA0EFQg038pyh9/680s1stA==",
+  "dgSpecHash": "9no1AgHMJAt9z6TCdtWWCLlljpbwHrUH089esIJoCNkj0B16v7usYSjdub/mROO/NeOIjR20YRK8Atmm8ENylg==",
   "success": true,
   "projectFilePath": "D:\\grpcWebService\\grpcServerClient\\GrpcDemo\\GrpcClient\\GrpcClient.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Ionut\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",
+    "C:\\Users\\Ionut\\.nuget\\packages\\system.memory\\4.5.2\\system.memory.4.5.2.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,0 +1,4 @@
+D:\grpcWebService\grpcServerClient\GrpcDemo\GrpcClient\bin\Debug\netcoreapp3.1\GrpcClient.exe
+D:\grpcWebService\grpcServerClient\GrpcDemo\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.csprojAssemblyReference.cache
+D:\grpcWebService\grpcServerClient\GrpcDemo\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.AssemblyInfoInputs.cache
+D:\grpcWebService\grpcServerClient\GrpcDemo\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.AssemblyInfo.cs

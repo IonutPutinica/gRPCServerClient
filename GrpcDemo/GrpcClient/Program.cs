@@ -6,7 +6,7 @@ namespace GrpcClient
     {
         static void Main(string[] args)
         {
-            
+            Console.ReadLine();
         }
     }
 }
