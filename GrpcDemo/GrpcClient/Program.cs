@@ -2,6 +2,7 @@
 using Grpc.Net.Client;
 using GrpcServer;
 using System.Threading.Tasks;
+using Grpc.Core;
 
 namespace GrpcClient
 {
@@ -35,6 +36,21 @@ namespace GrpcClient
             var customer = await customerClient.GetCustomerInfoAsync(clientRequested);
 
             Console.WriteLine($"{customer.FirstName } {customer.LastName} ");
+            Console.WriteLine();
+            Console.WriteLine("New Customer List");
+            Console.WriteLine();
+
+            using (var call = customerClient.GetNewCustomers(new NewCustomerRequest()))
+            {
+                //loops through every customer in the list, until the stream ends
+                //when it's done, we received every new customer
+                while(await call.ResponseStream.MoveNext())
+                {
+                    var currentCustomer = call.ResponseStream.Current;
+
+                    Console.WriteLine($"{currentCustomer.FirstName } {currentCustomer.LastName}: {currentCustomer.EmailAddress} ");
+                }
+            }
 
             Console.ReadLine();
         }
