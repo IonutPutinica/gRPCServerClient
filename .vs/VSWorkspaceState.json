@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\GrpcDemo",
+    "\\GrpcDemo\\GrpcClient",
+    "\\GrpcDemo\\GrpcServer\\Protos",
     "\\GrpcDemo\\GrpcServer\\Services"
   ],
+  "SelectedNode": "\\GrpcDemo\\GrpcDemo.sln",
   "PreviewInSolutionExplorer": false
 }
