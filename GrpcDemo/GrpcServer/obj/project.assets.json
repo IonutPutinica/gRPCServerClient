@@ -635,11 +635,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\grpcWebService\\GrpcDemo\\GrpcServer\\GrpcServer.csproj",
+      "projectUniqueName": "D:\\grpcWebService\\grpcServerClient\\GrpcDemo\\GrpcServer\\GrpcServer.csproj",
       "projectName": "GrpcServer",
-      "projectPath": "D:\\grpcWebService\\GrpcDemo\\GrpcServer\\GrpcServer.csproj",
+      "projectPath": "D:\\grpcWebService\\grpcServerClient\\GrpcDemo\\GrpcServer\\GrpcServer.csproj",
       "packagesPath": "C:\\Users\\Ionut\\.nuget\\packages\\",
-      "outputPath": "D:\\grpcWebService\\GrpcDemo\\GrpcServer\\obj\\",
+      "outputPath": "D:\\grpcWebService\\grpcServerClient\\GrpcDemo\\GrpcServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

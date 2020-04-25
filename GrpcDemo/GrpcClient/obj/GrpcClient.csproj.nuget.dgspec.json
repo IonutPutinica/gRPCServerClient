@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\grpcWebService\\grpcServerClient\\GrpcDemo\\GrpcServer\\GrpcServer.csproj": {}
+    "D:\\grpcWebService\\grpcServerClient\\GrpcDemo\\GrpcClient\\GrpcClient.csproj": {}
   },
   "projects": {
-    "D:\\grpcWebService\\grpcServerClient\\GrpcDemo\\GrpcServer\\GrpcServer.csproj": {
+    "D:\\grpcWebService\\grpcServerClient\\GrpcDemo\\GrpcClient\\GrpcClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\grpcWebService\\grpcServerClient\\GrpcDemo\\GrpcServer\\GrpcServer.csproj",
-        "projectName": "GrpcServer",
-        "projectPath": "D:\\grpcWebService\\grpcServerClient\\GrpcDemo\\GrpcServer\\GrpcServer.csproj",
+        "projectUniqueName": "D:\\grpcWebService\\grpcServerClient\\GrpcDemo\\GrpcClient\\GrpcClient.csproj",
+        "projectName": "GrpcClient",
+        "projectPath": "D:\\grpcWebService\\grpcServerClient\\GrpcDemo\\GrpcClient\\GrpcClient.csproj",
         "packagesPath": "C:\\Users\\Ionut\\.nuget\\packages\\",
-        "outputPath": "D:\\grpcWebService\\grpcServerClient\\GrpcDemo\\GrpcServer\\obj\\",
+        "outputPath": "D:\\grpcWebService\\grpcServerClient\\GrpcDemo\\GrpcClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -40,12 +40,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "Grpc.AspNetCore": {
-              "target": "Package",
-              "version": "[2.27.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -57,9 +51,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
