@@ -1,5 +1,7 @@
+//the proto files are a way of defining a contract between the server and a client in gRPC
 syntax = "proto3";
 
+//this defines the namespace for this particular proto
 option csharp_namespace = "GrpcServer";
 
 package greet;
