@@ -11,18 +11,18 @@ namespace GrpcClient
         static async Task Main(string[] args)
         {
             //hello request
-            var input = new HelloRequest
-            {
-                Name = "Ionut"
-            };
-            var channel = GrpcChannel.ForAddress("https://localhost:5001");
-            //setting up a client
-            //instantiating gRPC server call
-            var client = new Greeter.GreeterClient(channel);
-            //getting the reply
-            var reply = await client.SayHelloAsync(input);
+            //var input = new HelloRequest
+            //{
+            //    Name = "Ionut"
+            //};
+            //var channel = GrpcChannel.ForAddress("https://localhost:5001");
+            ////setting up a client
+            ////instantiating gRPC server call
+            //var client = new Greeter.GreeterClient(channel);
+            ////getting the reply
+            //var reply = await client.SayHelloAsync(input);
 
-            Console.WriteLine(reply.Message);
+            //Console.WriteLine(reply.Message);
 
             Console.ReadLine();
         }
