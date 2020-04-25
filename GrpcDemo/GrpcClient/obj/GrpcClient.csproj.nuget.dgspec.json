@@ -48,6 +48,12 @@
             "Grpc.Net.Client": {
               "target": "Package",
               "version": "[2.28.0, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.28.1, )"
             }
           },
           "imports": [

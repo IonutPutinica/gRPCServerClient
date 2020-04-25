@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uI+h4yAHrt5ef2fiEQ1bR3rXlgTHUNc/yuaQs35k7r1rgdhb+x+A8brx6G7vYxAA5FVUuveliwxF2YHCnrkxwA==",
+  "dgSpecHash": "pUQxsCLq9lMuAa4dBPr0mKwTRXdxmNyRojfk5T8IgFnAvn9MpWJ90tFDad0XQh7RuGOOdGCkl1BfYio0VhyPdg==",
   "success": true,
   "projectFilePath": "D:\\grpcWebService\\grpcServerClient\\GrpcDemo\\GrpcClient\\GrpcClient.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Ionut\\.nuget\\packages\\grpc.core.api\\2.27.0\\grpc.core.api.2.27.0.nupkg.sha512",
     "C:\\Users\\Ionut\\.nuget\\packages\\grpc.net.client\\2.28.0\\grpc.net.client.2.28.0.nupkg.sha512",
     "C:\\Users\\Ionut\\.nuget\\packages\\grpc.net.common\\2.28.0\\grpc.net.common.2.28.0.nupkg.sha512",
+    "C:\\Users\\Ionut\\.nuget\\packages\\grpc.tools\\2.28.1\\grpc.tools.2.28.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.logging.abstractions\\2.1.1\\microsoft.extensions.logging.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\Ionut\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.5.1\\system.diagnostics.diagnosticsource.4.5.1.nupkg.sha512",
     "C:\\Users\\Ionut\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"

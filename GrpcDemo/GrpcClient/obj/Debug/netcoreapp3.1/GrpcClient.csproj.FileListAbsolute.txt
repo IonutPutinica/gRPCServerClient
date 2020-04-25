@@ -4,3 +4,7 @@ D:\grpcWebService\grpcServerClient\GrpcDemo\GrpcClient\obj\Debug\netcoreapp3.1\G
 D:\grpcWebService\grpcServerClient\GrpcDemo\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.AssemblyInfo.cs
 D:\grpcWebService\grpcServerClient\GrpcDemo\GrpcClient\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
 D:\grpcWebService\grpcServerClient\GrpcDemo\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.csproj.CopyComplete
+D:\grpcWebService\grpcServerClient\GrpcDemo\GrpcClient\bin\Debug\netcoreapp3.1\Grpc.Core.Api.dll
+D:\grpcWebService\grpcServerClient\GrpcDemo\GrpcClient\bin\Debug\netcoreapp3.1\Grpc.Net.Client.dll
+D:\grpcWebService\grpcServerClient\GrpcDemo\GrpcClient\bin\Debug\netcoreapp3.1\Grpc.Net.Common.dll
+D:\grpcWebService\grpcServerClient\GrpcDemo\GrpcClient\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
