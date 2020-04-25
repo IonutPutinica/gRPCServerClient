@@ -14,12 +14,20 @@ namespace GrpcServer {
 
     static readonly grpc::Marshaller<global::GrpcServer.CustomerLookupModel> __Marshaller_CustomerLookupModel = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::GrpcServer.CustomerLookupModel.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::GrpcServer.CustomerModel> __Marshaller_CustomerModel = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::GrpcServer.CustomerModel.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::GrpcServer.NewCustomerRequest> __Marshaller_NewCustomerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::GrpcServer.NewCustomerRequest.Parser.ParseFrom);
 
     static readonly grpc::Method<global::GrpcServer.CustomerLookupModel, global::GrpcServer.CustomerModel> __Method_GetCustomerInfo = new grpc::Method<global::GrpcServer.CustomerLookupModel, global::GrpcServer.CustomerModel>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetCustomerInfo",
         __Marshaller_CustomerLookupModel,
+        __Marshaller_CustomerModel);
+
+    static readonly grpc::Method<global::GrpcServer.NewCustomerRequest, global::GrpcServer.CustomerModel> __Method_GetNewCustomers = new grpc::Method<global::GrpcServer.NewCustomerRequest, global::GrpcServer.CustomerModel>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "GetNewCustomers",
+        __Marshaller_NewCustomerRequest,
         __Marshaller_CustomerModel);
 
     /// <summary>Service descriptor</summary>
@@ -37,6 +45,11 @@ namespace GrpcServer {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      public virtual global::System.Threading.Tasks.Task GetNewCustomers(global::GrpcServer.NewCustomerRequest request, grpc::IServerStreamWriter<global::GrpcServer.CustomerModel> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -44,7 +57,8 @@ namespace GrpcServer {
     public static grpc::ServerServiceDefinition BindService(CustomerBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetCustomerInfo, serviceImpl.GetCustomerInfo).Build();
+          .AddMethod(__Method_GetCustomerInfo, serviceImpl.GetCustomerInfo)
+          .AddMethod(__Method_GetNewCustomers, serviceImpl.GetNewCustomers).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -54,6 +68,7 @@ namespace GrpcServer {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, CustomerBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_GetCustomerInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcServer.CustomerLookupModel, global::GrpcServer.CustomerModel>(serviceImpl.GetCustomerInfo));
+      serviceBinder.AddMethod(__Method_GetNewCustomers, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::GrpcServer.NewCustomerRequest, global::GrpcServer.CustomerModel>(serviceImpl.GetNewCustomers));
     }
 
   }

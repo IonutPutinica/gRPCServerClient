@@ -73,6 +73,9 @@ namespace GrpcServer.Services
             };
             foreach(var cust in customers)
                 {
+                //this sets a 1 second delay between pushing/sending data about a customer to the client side
+                await Task.Delay(1000);
+
                 await responseStream.WriteAsync(cust);
 
 
