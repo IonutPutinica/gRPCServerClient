@@ -24,15 +24,18 @@ namespace GrpcServer {
     static CustomersReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZQcm90b3MvY3VzdG9tZXJzLnByb3RvIiUKE0N1c3RvbWVyTG9va3VwTW9k",
-            "ZWwSDgoGdXNlcklkGAEgASgFImgKDUN1c3RvbWVyTW9kZWwSEQoJZmlyc3RO",
-            "YW1lGAEgASgJEhAKCGxhc3ROYW1lGAIgASgJEhQKDGVtYWlsQWRkcmVzcxgD",
-            "IAEoCRIPCgdpc0FsaXZlGAQgASgIEgsKA2FnZRgFIAEoBTJDCghDdXN0b21l",
-            "chI3Cg9HZXRDdXN0b21lckluZm8SFC5DdXN0b21lckxvb2t1cE1vZGVsGg4u",
-            "Q3VzdG9tZXJNb2RlbEINqgIKR3JwY1NlcnZlcmIGcHJvdG8z"));
+            "ChZQcm90b3MvY3VzdG9tZXJzLnByb3RvIhQKEk5ld0N1c3RvbWVyUmVxdWVz",
+            "dCIlChNDdXN0b21lckxvb2t1cE1vZGVsEg4KBnVzZXJJZBgBIAEoBSJoCg1D",
+            "dXN0b21lck1vZGVsEhEKCWZpcnN0TmFtZRgBIAEoCRIQCghsYXN0TmFtZRgC",
+            "IAEoCRIUCgxlbWFpbEFkZHJlc3MYAyABKAkSDwoHaXNBbGl2ZRgEIAEoCBIL",
+            "CgNhZ2UYBSABKAUyfQoIQ3VzdG9tZXISNwoPR2V0Q3VzdG9tZXJJbmZvEhQu",
+            "Q3VzdG9tZXJMb29rdXBNb2RlbBoOLkN1c3RvbWVyTW9kZWwSOAoPR2V0TmV3",
+            "Q3VzdG9tZXJzEhMuTmV3Q3VzdG9tZXJSZXF1ZXN0Gg4uQ3VzdG9tZXJNb2Rl",
+            "bDABQg2qAgpHcnBjU2VydmVyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServer.NewCustomerRequest), global::GrpcServer.NewCustomerRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServer.CustomerLookupModel), global::GrpcServer.CustomerLookupModel.Parser, new[]{ "UserId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServer.CustomerModel), global::GrpcServer.CustomerModel.Parser, new[]{ "FirstName", "LastName", "EmailAddress", "IsAlive", "Age" }, null, null, null, null)
           }));
@@ -41,6 +44,107 @@ namespace GrpcServer {
 
   }
   #region Messages
+  public sealed partial class NewCustomerRequest : pb::IMessage<NewCustomerRequest> {
+    private static readonly pb::MessageParser<NewCustomerRequest> _parser = new pb::MessageParser<NewCustomerRequest>(() => new NewCustomerRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<NewCustomerRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GrpcServer.CustomersReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public NewCustomerRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public NewCustomerRequest(NewCustomerRequest other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public NewCustomerRequest Clone() {
+      return new NewCustomerRequest(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as NewCustomerRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(NewCustomerRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(NewCustomerRequest other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
   public sealed partial class CustomerLookupModel : pb::IMessage<CustomerLookupModel> {
     private static readonly pb::MessageParser<CustomerLookupModel> _parser = new pb::MessageParser<CustomerLookupModel>(() => new CustomerLookupModel());
     private pb::UnknownFieldSet _unknownFields;
@@ -49,7 +153,7 @@ namespace GrpcServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GrpcServer.CustomersReflection.Descriptor.MessageTypes[0]; }
+      get { return global::GrpcServer.CustomersReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -182,7 +286,7 @@ namespace GrpcServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GrpcServer.CustomersReflection.Descriptor.MessageTypes[1]; }
+      get { return global::GrpcServer.CustomersReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
