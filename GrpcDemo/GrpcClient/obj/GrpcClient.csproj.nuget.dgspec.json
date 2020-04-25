@@ -44,6 +44,10 @@
             "Google.Protobuf": {
               "target": "Package",
               "version": "[3.11.4, )"
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.28.0, )"
             }
           },
           "imports": [
